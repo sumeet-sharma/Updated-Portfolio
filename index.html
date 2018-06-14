@@ -17,7 +17,7 @@
 <body>
     <!-- make the navbar responsive -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top" id="navbar">
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.html" id="logo">SUMEET SHARMA</a>
@@ -33,13 +33,13 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#Portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Technologies</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Resume</a>
@@ -49,82 +49,111 @@
         </div>
     </nav>
 
-
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <center>
-                <h1 class="display-4">Sumeet Sharma</h1>
-                <p class="lead">Full Stack Web Developer</p>
-            </center>
+    <div data-spy="scroll" data-target="#navbar" data-offset="0">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <center>
+                    <h1 class="display-4">Sumeet Sharma</h1>
+                    <p class="lead">Full Stack Web Developer</p>
+                </center>
+            </div>
         </div>
-    </div>
 
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <center>
-                <h3>About Me!</h3>
-                <p class="lead">I am currently pursuing the "Full Stack Web Developer Coding Bootcamp. In the upcoming 6 months I will be
-                    ready to make some full stack websites.</p>
-            </center>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <center>
+                    <h3 id="about">About Me!</h3>
+                    <p class="lead">I am currently pursuing the "Full Stack Web Developer Coding Bootcamp. In the upcoming 6 months I will
+                        be ready to make some full stack websites.</p>
+                </center>
+            </div>
         </div>
-    </div>
 
-    <div id="Portfolio">
-        <center>
-            <h3>Portfolio</h3>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets/images/logo.jpg" width="200px" height="200px" alt="First slide" />
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                        <img src="assets/images/giphy.png" width="200px" height="200px" alt="Second slide" />
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                        <img src="assets/images/sched.png" width="200px" height="200px" alt="Third slide" />
-                        <div class="carousel-caption d-none d-md-block">
+        <div id="Portfolio">
+            <center>
+                <h3>Portfolio</h3>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://sumeet-sharma.github.io/unit-4-game/" target="_blank">
+                                <img src="assets/images/logo.jpg" width="200px" height="200px" alt="First slide" />
+                                <div class="carousel-caption d-none d-md-block">
+                            </a>
+                            </div>
+                            <a href="https://sumeet-sharma.github.io/Rockstar-Lookup/" target="_blank">
+                                <img src="assets/images/giphy.png" width="200px" height="200px" alt="Second slide" />
+                                <div class="carousel-caption d-none d-md-block">
+                            </a>
+                            </div>
+                            <a href="https://sumeet-sharma.github.io/Train-Scheduler/" target="_blank">
+                                <img src="assets/images/sched.png" width="200px" height="200px" alt="Third slide" />
+                                <div class="carousel-caption d-none d-md-block">
+                            </a>
+                            </div>
                         </div>
                     </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </center>
-    </div>
-    <br>
-    <div class="jumbotron">
-        <h3>Get in touch with me!</h3>
-        <p class="lead">Ready to start your next project with me? Awesome! Give me a call or send me an email and I will get back to you
-            as soon as possible!</p>
-        <center>
-            <a href="#">
-                <i class="fa fa-github" style="font-size:60px;"></i>
-            </a>
-            <a href="#">
-                <i class="fa fa-linkedin-square" style="font-size:60px"></i>
-            </a>
-            <a href="#">
-                <i class="fa fa-envelope" style="font-size:60px"></i>
-                <br> sumeetdutt@gmail.com
-            </a>
-        </center>
+            </center>
+        </div>
+        <br>
+        <div class="jumbotron">
+            <h3 id="contact">Get in touch with me!</h3>
+            <p class="lead">Ready to start your next project with me? Awesome! Give me a call or send me an email and I will get back to
+                you as soon as possible!</p>
+            <center>
+                <a href="gmail.com">
+                    <i class="fa fa-envelope" style="font-size:60px"></i>
+                    <br> sumeetdutt@gmail.com
+                </a><br><br>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Follow me on:</h5>
+                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="https://github.com/sumeet-sharma" target="_blank" class="card-link">
+                            <i class="fa fa-github" style="font-size:60px;"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sumeet-sharma-6923a322/" target="_blank" class="card-link">
+                            <i class="fa fa-linkedin-square" style="font-size:60px;"></i>
+                        </a>
+                    </div>
+                </div>
 
-        <!-- <a class="btn btn-block btn-social btn-twitter">
-            <span class="fa fa-twitter"></span> Sign in with Twitter
-        </a> -->
+                <!-- <a href="https://github.com/sumeet-sharma" target="_blank">
+                    <i class="fa fa-github" style="font-size:60px;"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sumeet-sharma-6923a322/" target="_blank">
+                    <i class="fa fa-linkedin-square" style="font-size:60px"></i>
+                </a> -->
 
+            </center>
+
+            <!-- <a class="btn btn-block btn-social btn-twitter">
+                <span class="fa fa-twitter"></span> Sign in with Twitter
+            </a> -->
+
+        </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
